@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>自我介紹</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+	
+	
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+
+<section id="bar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link active" href="index.html"> 首頁 <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="intro.html">自我介紹</a>
+					<a class="nav-item nav-link" href="QAQA.html">QA</a>
+					<a class="nav-item nav-link" href="contact.html">聯絡我們</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+
+	
+
+<!--給圖文內容區一個名稱，叫做"introfirst"-->
+<section id="introfirst">
+	<!--因為要劃分版面(畫表格的概念)，所以要把區域指定為容器"container"-->
+	<div class="container">
+	  <!--畫表格的時候，我們會先劃一個方格: 就是"row"-->
+	   <div class="row">
+		<!--畫完表格後，再決定每一欄(col)的大小，系統內建會自動分成12格，用col-X 來決定欄寬-->
+
+			<div class="col-6">
+				
+				<img src="img/taylor-swift.jpg" >
+					
+			</div>
+				
+			<!--col-4 表示拿12格中中間的4格-->
+			<div class="col-4">
+			      
+				  
+				  最愛的音樂家 Taylor swift
+				  
+				  
+			</div>
+
+			
+
+	  </div>
+	</div>	
+</section>
+<p></p>
+
+	<section id="introsecond">
+		<div class="container">
+
+		<div class="row">
+		<div class="col-4">
+
+		<div class="card" style="width: 18rem;">
+		<img src="img/lover.jpeg" class="card-img-top" alt="...">
+		<div class="card-body">
+		<h5 class="card-title">Lover</h5>
+		<p class="card-text">Lover不只是一個簡單的主題，裡面不是只有小情小愛的創作，有時候所謂的浪漫，不一定關於愛情，可能也會出現在寂寞與悲傷之中，或是生活中你所經歷過的事，這些都可以變成浪漫的事物。</p>
+		<a href="https://www.youtube.com/watch?v=8HxbqAsppwU&list=OLAK5uy_nHHWc9S0Nw7oLyLYBptkJ4DpkQeoL1Igw&index=15" class="btn btn-outline-info" role="button" target="_blank">推薦歌曲Afterglow</a>
+		  </div>
+		</div>
+		</div>
+
+		<div class="col-4">
+		<div class="card" style="width: 18rem;">
+		<img src="img/folklore.jpg" class="card-img-top" alt="...">
+		<div class="card-body">
+		<h5 class="card-title">Folklore</h5>
+		<p class="card-text">榮獲2021葛萊美最佳專輯獎，這張專輯就是棒不多贅述</p>
+		<a href="https://www.youtube.com/watch?v=o5SQIECedTY&list=OLAK5uy_kBCcQO_p5kZzSJDsJ7wA5WSSQ_FUL4Xu0&index=21" class="btn btn-outline-danger" target="_blank">推薦歌曲Exile</a>
+		  </div>
+		</div>
+		</div>
+
+		<div class="col-4">
+		<div class="card" style="width: 18rem;">
+		<img src="img/everymore.jpg" class="card-img-top" alt="...">
+		<div class="card-body">
+		<h5 class="card-title">Everymore</h5>
+		<p class="card-text">Folklore的續作，如果folklore 是沉穩寧靜代表秋冬，那evermore 是熱情溫暖代表春夏</p>
+		<a href="https://www.youtube.com/watch?v=RsEZmictANA&list=OLAK5uy_m-vSVOiVeY_z2lPgThmS6Nn0TJExXZtOg" class="btn btn-outline-warning" target="_blank" >推薦歌曲Willow</a>
+		  </div>
+		</div>
+		</div>
+
+
+		</div>
+
+		</div>
+
+		</section>
+	
+</body>
+</html>
